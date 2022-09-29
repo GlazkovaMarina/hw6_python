@@ -50,3 +50,12 @@ print(res)
 #Задача 43: Дана последовательность чисел. Получить список уникальных элементов заданной последовательности.
 #Пример:
 #[1, 2, 3, 5, 1, 5, 3, 10] => [2, 10]
+
+my_list = [1, 2, 3, 5, 1, 5, 3, 10] 
+new_list = []
+for elem in my_list:
+    if elem not in new_list:
+        new_list.append(elem)
+    else:
+        new_list.remove(elem)
+print(new_list)
